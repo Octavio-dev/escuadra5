@@ -20,14 +20,18 @@
     align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: rgba($color: $colorPrincipal, $alpha: 0.5);
+    background-color: rgba($color: $colorGris, $alpha: 0.1);
 
     &__logo{
         font-size: $h1;
         padding-left: 2rem;
 
         a{
-            color: $colorTercero;
+            color: $colorPrincipal;
+        }
+
+        a:hover{
+            color: $colorCuarto;
         }
     }
 
@@ -36,18 +40,19 @@
 
         &--ul{
             display: flex;
-            font-size: $texto;
-            padding-right:2rem;
+            font-size: $h2;
 
             a{
                 text-align: center;
-                color: $colorCuarto;
-                padding: 0 2rem 0 2rem;
-                border-left: 1px solid $colorCuarto;
+                font-weight: bolder;
+                color: $colorPrincipal;
+                padding: 0 3rem 0 3rem;
+                border-left: 1px solid $colorSecundario;
             }
 
             a:hover{
-                color: $colorTexto2;
+                color: $colorCuarto;
+                font-weight: 200;
             }
         }
     }

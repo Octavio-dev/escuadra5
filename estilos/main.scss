@@ -20,7 +20,10 @@
     align-items: center;
     height: 10vh;
     width: 100%;
-    background-color: rgba($color: $colorGris, $alpha: 0.1);
+    background-color: rgba($color: $colorGris, $alpha: 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     &__logo{
         font-size: $h1;

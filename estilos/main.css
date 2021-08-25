@@ -1,13 +1,13 @@
 /*colores*/
 /*fontSize*/
 .fondo {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
   position: relative;
-  background-image: url(../img/Emblema-Nacional-EADB-02.png);
+  background-image: url(/img/escuadra03.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  background-size: contain;
+  z-index: 0;
 }
 
 .fondo::before {
@@ -17,9 +17,29 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(94, 54, 106, 0.9);
+  background-color: #5e366a;
+  opacity: 0.6;
   background-attachment: fixed;
   z-index: -1;
+}
+
+.fondo .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 7rem;
+  height: 90vh;
+  width: 100%;
 }
 
 * {
@@ -44,7 +64,11 @@
           align-items: center;
   height: 10vh;
   width: 100%;
-  background-color: rgba(189, 189, 189, 0.1);
+  background-color: rgba(189, 189, 189, 0.3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header__logo {

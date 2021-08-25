@@ -1,11 +1,11 @@
 .fondo {
-    height: 100vh;
-    width: 100%;  
+    min-height: 100vh; 
     position: relative;
-    background-image: url(../img/Emblema-Nacional-EADB-02.png);
+    background-image: url(/img/escuadra03.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-size: contain;
+    z-index: 0;
 
     &::before{
         content: "";
@@ -14,8 +14,19 @@
         left: 0;  
         height: 100vh;
         width: 100%;
-        background-color: rgba($colorSecundario, 0.9);
+        background-color: $colorSecundario;
+        opacity: 0.6;
         background-attachment: fixed;
         z-index: -1;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: $main;
+        height: 90vh;
+        width: 100%;
     }
 }

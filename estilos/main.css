@@ -1,15 +1,5 @@
 /*colores*/
 /*fontSize*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Rampart One', cursive;
-}
-
 .fondo {
   height: 100vh;
   width: 100%;
@@ -30,6 +20,16 @@
   background-color: rgba(94, 54, 106, 0.7);
   background-attachment: fixed;
   z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Rampart One', cursive;
 }
 
 .header {

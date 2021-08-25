@@ -42,6 +42,12 @@
             &--2{
                 color: $colorCuarto;
             }
+
+            &--2:hover{
+                animation-name: mover;
+                animation-iteration-count: 2;
+                animation-duration: .2s;
+            }
         }
     }
 }

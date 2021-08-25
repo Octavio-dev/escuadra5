@@ -1,0 +1,70 @@
+@import "./partials/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.fondo {
+    height: 100vh;
+    width: 100%;  
+    position: relative;
+    background-image: url(../img/Emblema-Nacional-EADB-02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;  
+        height: 100vh;
+        width: 100%;
+        background-color: rgba($colorSecundario, 0.7);
+        background-attachment: fixed;
+        z-index: -1;
+    }
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: rgba($color: $colorPrincipal, $alpha: 0.5);
+
+    &__logo{
+        font-size: $h1;
+        padding-left: 2rem;
+
+        a{
+            color: $colorTercero;
+        }
+    }
+
+    &__nav{
+        display: flex;
+
+        &--ul{
+            display: flex;
+            font-size: $texto;
+            padding-right:2rem;
+
+            a{
+                text-align: center;
+                color: $colorCuarto;
+                padding: 0 2rem 0 2rem;
+                border-left: 1px solid $colorCuarto;
+            }
+
+            a:hover{
+                color: $colorTexto2;
+            }
+        }
+    }
+}

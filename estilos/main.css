@@ -42,6 +42,31 @@
   width: 100%;
 }
 
+.fondo .main__titulo {
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 2rem;
+}
+
+.fondo .main__titulo--2 {
+  color: #00ffcc;
+}
+
 * {
   margin: 0;
   padding: 0;
